@@ -9,6 +9,6 @@ headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 res = requests.get(url, headers = headers) # html을 가져옴
 res.raise_for_status()
 
-with open('nadocoding.html', 'w', encoding= 'utf-8') as f:
+with open('nadocoding.html', 'w', encoding='utf-8') as f:
     f.write(res.text)
 
